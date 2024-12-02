@@ -1,18 +1,21 @@
 {
   "buildCommand": "npm run build && npm run build-storybook",
   "outputDirectory": "dist",
-  "rewrites": [
+  "redirects": [
     {
       "source": "/storybook",
-      "destination": "/storybook/index.html"
+      "destination": "/storybook/index.html",
+      "permanent": true
+    }
+  ],
+  "routes": [
+    {
+      "src": "/storybook/(.*)",
+      "dest": "/storybook/$1"
     },
     {
-      "source": "/storybook/:path*",
-      "destination": "/storybook/:path*"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
