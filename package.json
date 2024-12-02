@@ -24,11 +24,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build-storybook": "storybook build -o public/storybook",
+    "build": "tsc -b && vite build && npm run build-storybook",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
     "test": "vitest --coverage",
     "build:types": "tsc -p tsconfig.build.json",
     "build:vite": "vite build",
