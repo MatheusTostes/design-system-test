@@ -14,6 +14,10 @@ const config = {
   docs: {
     autodocs: "tag",
   },
+  staticDirs: ["../public"],
+  output: {
+    dir: "../dist/storybook",
+  },
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.(ts|tsx)$/,

@@ -24,7 +24,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build-storybook": "storybook build -o public/storybook",
+    "build-storybook": "storybook build",
     "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
