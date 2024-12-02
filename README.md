@@ -32,7 +32,6 @@ src/
 ## 🛠️ Scripts
 
 ```
-"scripts": {
 "dev": "Start development server",
 "build": "Build for production",
 "test": "Run tests with coverage",
@@ -40,7 +39,6 @@ src/
 "build-storybook": "Build Storybook for deployment",
 "prepare": "Build types and bundle",
 "release": "Build and publish to npm"
-}
 ```
 
 ## 🎨 Atomic Design
@@ -66,7 +64,6 @@ To view the documentation:
 
 ```
 npm run storybook
-
 ```
 
 ## ✅ Testing
@@ -110,7 +107,6 @@ json:tsconfig.app.json
 ### TypeScript
 ```
 json:tsconfig.app.json
-
 ```
 
 ## 📦 Installation
